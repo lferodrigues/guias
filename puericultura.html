@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justificativa de Consulta</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.unimed.coop.br/site/o/sites-theme/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./Assets/css/Templates.css">
+    <link rel="stylesheet" href="./Assets/css/estilo.css">
+    <link rel="stylesheet" href="./Assets/css/estilo-puericultura.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+ <!-- HEADER -->
+ <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="https://www.unimed.coop.br/site/web/saojoaonepomuceno" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round" src="Assets/img/logo.png" alt="Home" style="height: 40px; width: 20;" ></a></a>
+      <div class="w3-right w3-hide-small">
+        <a href="javascript:void(0);" onclick="abrirPDF()" class="w3-bar-item w3-button">
+            <i class="fa fa-print w3-margin-right"></i>Gerar guia
+        </a> 
+      </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>    
+</div>  
+  </div>
+    </div>
+    <!-- HEADER PARA MOBILE-->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
+        <a href="javascript:void(0);" onclick="abrirPDF()" class="w3-bar-item w3-button">
+            <i class="fa fa-print w3-margin-right"></i>Gerar guia
+        </a> 
+    </nav>      
+    <div class="container">
+        <img src="./Assets/img/Consulta Puericultura.png" alt="Guia de Consulta">
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.gov.br/ans/pt-br"><img src="./Assets/img/ans.png" alt="Logo do Felipe"></a>
+            <p>© <span id="currentYear">2024</span> Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="./Assets/js/funcao.js"></script>
+    <script src="./Assets/js/mobile.js"></script>
+    <script>
+        function abrirPDF() {
+            window.open('./Assets/pdf/Consulta Puericultura.pdf', '_blank');
+        }  
+    </script>
+</body>
+</html>
