@@ -15,14 +15,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #00723f;
+    
     position: relative;
 }
 .print-button {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #00723f;
+  
     color: white;
     border: none;
     padding: 5px 10px;
@@ -34,7 +34,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid #00723f;
     padding-bottom: 10px;
 }
 .header img {
@@ -42,7 +41,6 @@ body {
 }
 .header-text {
     text-align: left;
-    color: #00723f;
     font-size: 14px;
     font-weight: bold;
 }
@@ -58,7 +56,7 @@ input[type="text"] {
     background-color: white;
 }
 h3 {
-    background-color: #00723f;
+    background-color: #343535;
     color: white;
     padding: 5px;
     border-radius: 4px;
@@ -201,6 +199,14 @@ footer {
 .footer-content img {
     width: 90px;
     margin-right: 10px;
+}
+.w3-sidebar {
+    left: 0; /* Garante que a barra fique no canto esquerdo */
+    width: 250px; /* Define uma largura padrão */
+    height: 100%; /* Faz a barra ocupar toda a altura da tela */
+    position: fixed; /* Mantém a barra fixa na lateral */
+    top: 0;
+    background-color: black; /* Cor de fundo */
 }
 
   
